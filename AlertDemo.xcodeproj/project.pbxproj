@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		F1612EA723E32EA300820053 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EA623E32EA300820053 /* AppDelegate.swift */; };
 		F1612EA923E32EA300820053 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EA823E32EA300820053 /* SceneDelegate.swift */; };
-		F1612EAB23E32EA300820053 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EAA23E32EA300820053 /* ContentView.swift */; };
+		F1612EAB23E32EA300820053 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EAA23E32EA300820053 /* HomeView.swift */; };
 		F1612EAD23E32EA400820053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1612EAC23E32EA400820053 /* Assets.xcassets */; };
 		F1612EB023E32EA400820053 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1612EAF23E32EA400820053 /* Preview Assets.xcassets */; };
 		F1612EB323E32EA400820053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1612EB123E32EA400820053 /* LaunchScreen.storyboard */; };
+		F1612EBB23E33BC100820053 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EBA23E33BC100820053 /* CustomAlertView.swift */; };
+		F1612EBD23E33D4000820053 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EBC23E33D4000820053 /* VisualEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F1612EA323E32EA300820053 /* AlertDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1612EA623E32EA300820053 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1612EA823E32EA300820053 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1612EAA23E32EA300820053 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1612EAA23E32EA300820053 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F1612EAC23E32EA400820053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1612EAF23E32EA400820053 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1612EB223E32EA400820053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1612EB423E32EA400820053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1612EBA23E33BC100820053 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		F1612EBC23E33D4000820053 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				F1612EA623E32EA300820053 /* AppDelegate.swift */,
 				F1612EA823E32EA300820053 /* SceneDelegate.swift */,
-				F1612EAA23E32EA300820053 /* ContentView.swift */,
+				F1612EBC23E33D4000820053 /* VisualEffectView.swift */,
+				F1612EAA23E32EA300820053 /* HomeView.swift */,
+				F1612EBA23E33BC100820053 /* CustomAlertView.swift */,
 				F1612EAC23E32EA400820053 /* Assets.xcassets */,
 				F1612EB123E32EA400820053 /* LaunchScreen.storyboard */,
 				F1612EB423E32EA400820053 /* Info.plist */,
@@ -146,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1612EBD23E33D4000820053 /* VisualEffectView.swift in Sources */,
 				F1612EA723E32EA300820053 /* AppDelegate.swift in Sources */,
 				F1612EA923E32EA300820053 /* SceneDelegate.swift in Sources */,
-				F1612EAB23E32EA300820053 /* ContentView.swift in Sources */,
+				F1612EBB23E33BC100820053 /* CustomAlertView.swift in Sources */,
+				F1612EAB23E32EA300820053 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +292,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"AlertDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AlertDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -294,6 +303,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.AlertDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,8 +313,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"AlertDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AlertDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.iamjdpatel.AlertDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
