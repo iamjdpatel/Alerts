@@ -45,17 +45,24 @@ struct HomeView: View {
                         Text("Custom Alert")
                     }
                     
-//                    Button(action: {
-//                        print("clicked")
-//                    }) {
-//                        Text("Textfield Native Alert")
-//                    }
-//                    
-//                    Button(action: {
-//                        print("clicked")
-//                    }) {
-//                        Text("Textfield Custom Alert")
-//                    }
+                    Button(action: {
+                        print("clicked")
+                    }) {
+                        Text("Textfield Native Alert")
+                    }
+                    
+                    Button(action: {
+                        self.showCustomTextfieldAlert.toggle()
+                        
+                        withAnimation(.easeIn(duration: 0.3)) {
+                            self.scale = 1.1
+                            withAnimation(.easeIn(duration: 0.2)) {
+                                self.scale = 1
+                            }
+                        }
+                    }) {
+                        Text("Textfield Custom Alert")
+                    }
                     
                 }
                 
@@ -66,6 +73,12 @@ struct HomeView: View {
                     
                 }
                 
+                if showCustomTextfieldAlert {
+                    
+                    CustomTextfieldAlertView(showCustomTextfieldAlert: $showCustomTextfieldAlert)
+                        .scaleEffect(scale)
+                    
+                }
                 
                 
             }

@@ -15,6 +15,7 @@
 		F1612EB323E32EA400820053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1612EB123E32EA400820053 /* LaunchScreen.storyboard */; };
 		F1612EBB23E33BC100820053 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EBA23E33BC100820053 /* CustomAlertView.swift */; };
 		F1612EBD23E33D4000820053 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1612EBC23E33D4000820053 /* VisualEffectView.swift */; };
+		F1E76DAE23E48FA200549873 /* CustomTextfieldAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E76DAD23E48FA200549873 /* CustomTextfieldAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F1612EB423E32EA400820053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1612EBA23E33BC100820053 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		F1612EBC23E33D4000820053 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		F1E76DAD23E48FA200549873 /* CustomTextfieldAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfieldAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F1612EBC23E33D4000820053 /* VisualEffectView.swift */,
 				F1612EAA23E32EA300820053 /* HomeView.swift */,
 				F1612EBA23E33BC100820053 /* CustomAlertView.swift */,
+				F1E76DAD23E48FA200549873 /* CustomTextfieldAlertView.swift */,
 				F1612EAC23E32EA400820053 /* Assets.xcassets */,
 				F1612EB123E32EA400820053 /* LaunchScreen.storyboard */,
 				F1612EB423E32EA400820053 /* Info.plist */,
@@ -156,6 +159,7 @@
 				F1612EA723E32EA300820053 /* AppDelegate.swift in Sources */,
 				F1612EA923E32EA300820053 /* SceneDelegate.swift in Sources */,
 				F1612EBB23E33BC100820053 /* CustomAlertView.swift in Sources */,
+				F1E76DAE23E48FA200549873 /* CustomTextfieldAlertView.swift in Sources */,
 				F1612EAB23E32EA300820053 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,9 +296,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AlertDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AlertDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,9 +318,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AlertDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8Y7F7UCN4K;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AlertDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
